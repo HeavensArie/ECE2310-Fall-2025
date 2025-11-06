@@ -1,0 +1,15 @@
+#include <iostream>
+#include "RPG.h"
+#include "Game.h"
+
+using namespace std;
+
+int main() {
+    Game* g = new Game();
+    int num_players = 10;
+    (*g).generatePlayers(num_players);
+    (*g).gameLoop();
+    (*g).printFinalResults();
+    
+    return 0;
+}
